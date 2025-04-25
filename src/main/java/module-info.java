@@ -3,6 +3,7 @@ module com.example.orm {
     requires javafx.fxml;
     requires lombok;
     requires com.jfoenix;
+//    requires org.hibernate.orm.core;
     requires org.hibernate.orm.core;
     requires jakarta.persistence;
     requires java.naming;
