@@ -12,11 +12,11 @@
    <children>
       <Line endX="550.800048828125" endY="7.62939453125E-6" layoutX="31.0" layoutY="274.0" rotate="90.0" startX="51.346107482910156" startY="0.03968900442123413" stroke="#fafafa" />
       <Line endX="550.800048828125" endY="7.62939453125E-6" layoutX="206.0" layoutY="273.0" rotate="90.0" startX="51.346107482910156" startY="0.03968900442123413" stroke="#fafafa" />
-      <Pane layoutX="300.0" layoutY="223.0" prefHeight="50.0" prefWidth="248.0" style="-fx-background-color: green; -fx-border-radius: 10px;">
+      <Pane layoutX="298.0" layoutY="229.0" prefHeight="50.0" prefWidth="256.0" style="-fx-background-color: green; -fx-border-radius: 10px;">
          <children>
-            <Label layoutX="-4.0" layoutY="-1.0" prefHeight="38.0" prefWidth="257.0" style="-fx-border-radius: 10px;" text=" mental wellness" textFill="#fcfcfc">
+            <Label layoutX="-3.0" layoutY="1.0" prefHeight="26.0" prefWidth="263.0" style="-fx-border-radius: 10px;" text=" mental wellness" textFill="#fcfcfc">
                <font>
-                  <Font name="Gabarito Regular" size="34.0" />
+                  <Font name="System Bold" size="33.0" />
                </font>
             </Label>
          </children>
@@ -44,27 +44,27 @@
       </JFXButton>
       <Label layoutX="192.0" layoutY="117.0" text="&quot;Professional, Personalized, and Private Mental Health Care&quot;" textFill="#333333">
          <font>
-            <Font name="System Italic" size="17.0" />
+            <Font name="System Bold Italic" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="103.0" layoutY="229.0" text="Your path to" textFill="#333333">
+      <Label layoutX="90.0" layoutY="229.0" text="Your path to" textFill="#333333">
          <font>
-            <Font name="Gabarito Regular" size="34.0" />
+            <Font name="System Bold" size="34.0" />
          </font>
       </Label>
-      <Label layoutX="191.0" layoutY="285.0" text="Experience secure and compassionate mental health care from licensed professionals" textFill="#333333">
-         <font>
-            <Font name="Gabarito Regular" size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="197.0" layoutY="304.0" text="—designed to fit your life, available anytime, on any device, from anywhere you feel safe." textFill="#333333">
+      <Label layoutX="191.0" layoutY="285.0" text="Experience secure and compassionate mental health care from licensed professionals." textFill="#333333">
          <font>
             <Font name="Gabarito Regular" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="557.0" layoutY="229.0" text="starts here" textFill="#333333">
+      <Label layoutX="201.0" layoutY="304.0" text="designed to fit your life, available anytime, on any device, from anywhere you feel safe." textFill="#333333">
          <font>
-            <Font name="Gabarito Regular" size="34.0" />
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="558.0" layoutY="229.0" prefHeight="50.0" prefWidth="174.0" text="starts here" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="34.0" />
          </font>
       </Label>
       <ImageView fitHeight="280.0" fitWidth="263.0" layoutX="-17.0" layoutY="272.0" opacity="0.34" pickOnBounds="true">
@@ -87,5 +87,10 @@
             <Font name="Times New Roman Bold" size="15.0" />
          </font>
       </Label>
+      <ImageView fitHeight="171.0" fitWidth="221.0" layoutX="587.0" layoutY="380.0" opacity="0.46" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/health therapy gif.gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

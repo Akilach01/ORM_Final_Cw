@@ -105,7 +105,7 @@ public class PattcientController implements Initializable {
     void deletePatcient(ActionEvent event) throws Exception {
         boolean resp = patcientService.deletePatcient(Integer.parseInt(idLbl.getText()));
         if (resp) {
-            new Alert(Alert.AlertType.INFORMATION, "Patcient deleted").show();
+            new Alert(Alert.AlertType.INFORMATION, "Patient deleted").show();
             getAllPatcients();
         } else {
             new Alert(Alert.AlertType.ERROR, "Something went wrong").show();
@@ -120,7 +120,7 @@ public class PattcientController implements Initializable {
         String conReg = "^[0-9]{10}$";
 
         if (!emailTxt.getText().matches(emailReg)) {
-            new Alert(AlertType.ERROR, "Invalid Email Address").show();
+            new Alert(AlertType.ERROR, "Invalid Email Format").show();
             return;
         }
 
@@ -143,7 +143,7 @@ public class PattcientController implements Initializable {
                         newPatcientId));
 
                 if (resp) {
-                    new Alert(Alert.AlertType.INFORMATION, "Patcient saved").show();
+                    new Alert(Alert.AlertType.INFORMATION, "Patient saved").show();
                     getAllPatcients();
                 } else {
                     new Alert(Alert.AlertType.ERROR, "Something went wrong").show();
@@ -177,7 +177,7 @@ public class PattcientController implements Initializable {
         String conReg = "^[0-9]{10}$";
 
         if (!emailTxt.getText().matches(emailReg)) {
-            new Alert(AlertType.ERROR, "Invalid Email Address").show();
+            new Alert(AlertType.ERROR, "Invalid Email Format").show();
             return;
         }
 
@@ -195,7 +195,7 @@ public class PattcientController implements Initializable {
                 Integer.parseInt(sessionLbl.getText())));
 
         if (resp) {
-            new Alert(Alert.AlertType.INFORMATION, "Patcient Updated").show();
+            new Alert(Alert.AlertType.INFORMATION, "Patient Updated").show();
             getAllPatcients();
         } else {
             new Alert(Alert.AlertType.ERROR, "Something went wrong").show();

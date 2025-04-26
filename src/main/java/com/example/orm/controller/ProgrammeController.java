@@ -88,7 +88,7 @@ public class ProgrammeController implements Initializable{
             nameTxt.getText(), durationTxt.getText(), Double.parseDouble(feesTxt.getText())
         ));        
         if (resp) {
-            new Alert(AlertType.INFORMATION, "New Programme Added Success!").show();
+            new Alert(AlertType.INFORMATION, "New Programme Added Successfully!").show();
             clearFields();
             getAllProgrammes();
         }else{

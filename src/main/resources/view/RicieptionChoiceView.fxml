@@ -16,12 +16,12 @@
       </ImageView>
       <Label layoutX="144.0" layoutY="118.0" text="Choose a Action For Receptionist" textFill="#333333">
          <font>
-            <Font name="Gabarito Regular" size="36.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
       </Label>
       <Label layoutX="230.0" layoutY="172.0" text="Manage Sessions , Patcients and Payments with ease and control." textFill="#333333">
          <font>
-            <Font name="Gabarito Regular" size="12.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
       <JFXButton layoutX="69.0" layoutY="253.0" onAction="#gotoSession" prefHeight="122.0" prefWidth="206.0" style="-fx-border-color: #2fd723; -fx-background-color: #fff;" text="Manage Sessions" textFill="#2fd723">
@@ -40,9 +40,9 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <ImageView fitHeight="245.0" fitWidth="670.0" layoutX="371.0" layoutY="305.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="244.0" fitWidth="505.0" layoutX="301.0" layoutY="5.0" opacity="0.17" pickOnBounds="true">
          <image>
-            <Image url="@../assests/4-removebg-preview.png" />
+            <Image url="@../assests/receptionist writing down.jpg" />
          </image>
       </ImageView>
       <JFXButton layoutX="530.0" layoutY="253.0" onAction="#gotoPayment" prefHeight="122.0" prefWidth="206.0" style="-fx-border-color: #2fd723; -fx-background-color: #fff;" text="Manage Payments" textFill="#2fd723">

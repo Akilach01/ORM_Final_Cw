@@ -29,7 +29,7 @@
          </cursor></JFXButton>
       <JFXButton fx:id="updateBtn" layoutX="581.0" layoutY="160.0" onAction="#updateProgramme" prefHeight="42.0" prefWidth="120.0" style="-fx-background-color: #0d6efd;" text="Update" textFill="#fcfcfc">
          <font>
-            <Font size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -77,5 +77,10 @@
          <font>
             <Font name="Times New Roman Bold" size="15.0" />
          </font></Label>
+      <Label layoutX="261.0" layoutY="48.0" text="Manage Programmes">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

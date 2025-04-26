@@ -1,63 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="selectRolePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="806.0" style="-fx-background-color: #fff;" 
-            xmlns="http://javafx.com/javafx/22" 
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.orm.controller.RoleController">
+<AnchorPane fx:id="selectRolePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="806.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orm.controller.RoleController">
    <children>
-      <Label layoutX="235.0" layoutY="146.0" text="Choose how you want to access the system_" textFill="#333333">
+      <Label layoutX="268.0" layoutY="142.0" text="how you want to access the system" textFill="#333333">
          <font>
             <Font name="Gabarito Regular" size="16.0" />
          </font></Label>
-      <Label layoutX="235.0" layoutY="168.0" text="Select" textFill="#333333">
+      <Label layoutX="158.0" layoutY="168.0" prefHeight="54.0" prefWidth="215.0" text="Please Select" textFill="#333333">
          <font>
             <Font name="Gabarito Regular" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="475.0" layoutY="167.0" text="Role" textFill="#333333">
+      <Label layoutX="504.0" layoutY="168.0" prefHeight="54.0" prefWidth="91.0" text="Role" textFill="#333333">
          <font>
             <Font name="Gabarito Regular" size="36.0" />
          </font>
       </Label>
-      <Pane layoutX="344.0" layoutY="167.0" prefHeight="46.0" prefWidth="118.0" rotate="-1.0" style="-fx-background-color: #0d6efd; -fx-background-radius: 3px;">
+      <Pane layoutX="373.0" layoutY="175.0" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: green; -fx-background-radius: 3px;">
          <children>
-            <Label layoutX="23.0" layoutY="1.0" text="Your" textFill="#fcfcfc">
+            <Label layoutX="22.0" layoutY="-6.0" prefHeight="26.0" prefWidth="74.0" text="Your" textFill="#fcfcfc">
                <font>
                   <Font name="Gabarito Regular" size="36.0" />
                </font>
             </Label>
+            <Label layoutX="-138.0" layoutY="51.0" text="Access the system based on your role: Admin or Receptionist only." textFill="#333333">
+               <font>
+                  <Font name="Gabarito Regular" size="13.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
-      <Label layoutX="212.0" layoutY="221.0" text="Access the system based on your role: Admin or Receptionist only." textFill="#333333">
-         <font>
-            <Font name="Gabarito Regular" size="13.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="91.0" fitWidth="85.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="95.0" fitWidth="130.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
          <image>
-            <Image url="@../assests/logo%20(2).png" />
+            <Image url="@../assests/pngtree-mental-health-problems-flat-illustration.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="237.0" layoutY="275.0" onAction="#gotoAdminAuth" prefHeight="144.0" prefWidth="145.0" style="-fx-border-color: #0d6efd; -fx-border-radius: 3px;" text="Im Admin" textFill="#0d6efd">
+      <JFXButton layoutX="237.0" layoutY="275.0" onAction="#gotoAdminAuth" prefHeight="144.0" prefWidth="145.0" style="-fx-border-color: black; -fx-border-radius: 3px; -fx-border-width: 2px;" text="as a Admin" textFill="#45bc0f">
          <font>
-            <Font name="Gabarito Regular" size="17.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="404.0" layoutY="275.0" onAction="#gotoRicieptionAuth" prefHeight="144.0" prefWidth="145.0" style="-fx-border-color: #0d6efd; -fx-border-radius: 3px;" text="Im Ricieption" textFill="#0d6efd">
+      <JFXButton layoutX="404.0" layoutY="275.0" onAction="#gotoRicieptionAuth" prefHeight="144.0" prefWidth="145.0" style="-fx-border-color: black; -fx-border-radius: 3px; -fx-border-width: 2px;" text="as a Reception" textFill="#45bc0f">
          <font>
-            <Font name="Gabarito Regular" size="17.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -71,5 +66,10 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
+      <Label layoutX="42.0" layoutY="91.0" text="MindVista">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

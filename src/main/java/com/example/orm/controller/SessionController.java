@@ -80,7 +80,7 @@ public class SessionController implements Initializable{
     void deleteSession(ActionEvent event) throws Exception {
         boolean resp = sessionService.deleteSession(Integer.parseInt(sesionIdLbl.getText()));
         if (resp) {
-            new Alert(Alert.AlertType.INFORMATION, "Deleted Session").show();
+            new Alert(Alert.AlertType.INFORMATION, " Session Deleted").show();
             getAllSessions();
             clearFields();
             getAllTherepistNames();
@@ -99,7 +99,7 @@ public class SessionController implements Initializable{
         ));
 
         if (resp){
-            new Alert(Alert.AlertType.INFORMATION,"Saved").show();
+            new Alert(Alert.AlertType.INFORMATION,"Saved successfully").show();
             getAllSessions();
             clearFields();
             getAllTherepistNames();
@@ -131,7 +131,7 @@ public class SessionController implements Initializable{
         ));
 
         if (resp){
-            new Alert(Alert.AlertType.INFORMATION,"Updated").show();
+            new Alert(Alert.AlertType.INFORMATION,"Session Updated").show();
             getAllSessions();
             clearFields();
             getAllTherepistNames();

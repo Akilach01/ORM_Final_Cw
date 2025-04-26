@@ -80,7 +80,7 @@ public class TherepsiController implements Initializable{
     void deleteTherepist(ActionEvent event) throws Exception {
         boolean resp = therepisService.deleteTherepist(Integer.parseInt(idLbl.getText()));
         if (resp) {
-            new Alert(AlertType.INFORMATION,"Therepy Delete Success !").show();
+            new Alert(AlertType.INFORMATION,"Therapist Deleted Successfully !").show();
             getAllTherepists();
         }else{
             new Alert(AlertType.ERROR,"Something Went Wrong !").show();
@@ -95,7 +95,7 @@ public class TherepsiController implements Initializable{
         String conReg = "^[0-9]{10}$";
 
         if (!emailTxt.getText().matches(emailReg)) {
-            new Alert(AlertType.ERROR, "Invalid Email Address").show();
+            new Alert(AlertType.ERROR, "Invalid Email Format !").show();
             return;
         }
 
@@ -106,7 +106,7 @@ public class TherepsiController implements Initializable{
 
         boolean resp = therepisService.saveTherepist(new TherepistDto(nameTxt.getText(), emailTxt.getText(),Integer.parseInt(contactTxt.getText())));
         if (resp) {
-            new Alert(AlertType.INFORMATION,"Therepy Added Success !").show();
+            new Alert(AlertType.INFORMATION,"Therapist Added Successfully !").show();
             getAllTherepists();
         }else{
             new Alert(AlertType.ERROR,"Something Went Wrong !").show();
@@ -135,7 +135,7 @@ public class TherepsiController implements Initializable{
         String conReg = "^[0-9]{10}$";
 
         if (!emailTxt.getText().matches(emailReg)) {
-            new Alert(AlertType.ERROR, "Invalid Email Address").show();
+            new Alert(AlertType.ERROR, "Invalid Email Format").show();
             return;
         }
 
@@ -146,7 +146,7 @@ public class TherepsiController implements Initializable{
 
         boolean resp = therepisService.updateTherepist(new TherepistDto(Integer.parseInt(idLbl.getText()),nameTxt.getText(), emailTxt.getText(),Integer.parseInt(contactTxt.getText())));
         if (resp) {
-            new Alert(AlertType.INFORMATION,"Therepy Update Success !").show();
+            new Alert(AlertType.INFORMATION,"Therapist Updated Successfully !").show();
             getAllTherepists();
         }else{
             new Alert(AlertType.ERROR,"Something Went Wrong !").show();

@@ -87,9 +87,9 @@
             <Font name="Times New Roman Bold" size="15.0" />
          </font>
       </Label>
-      <ImageView fitHeight="156.0" fitWidth="226.0" layoutX="569.0" layoutY="380.0" opacity="0.28" pickOnBounds="true">
+      <ImageView fitHeight="171.0" fitWidth="221.0" layoutX="587.0" layoutY="380.0" opacity="0.46" pickOnBounds="true">
          <image>
-            <Image url="@../assests/group therapy- talking.jpg" />
+            <Image url="@../assests/health therapy gif.gif" />
          </image>
       </ImageView>
    </children>
